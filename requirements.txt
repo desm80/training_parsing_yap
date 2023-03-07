@@ -1,2 +1,4 @@
 requests-cache
 tqdm
+beautifulsoup4
+lxml
