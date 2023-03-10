@@ -39,8 +39,9 @@ if __name__ == '__main__':
         dl = soup.find('dl')
         dl_text = dl.text.replace('\n', ' ')
         # На печать теперь выводится переменная dl_text — без пустых строчек.
+        h1_text = h1.text.replace('¶', ' ')
         results.append(
-            (version_link, h1.text, dl_text)
+            (version_link, h1_text, dl_text)
         )
 
     # Печать списка с данными.
