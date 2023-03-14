@@ -17,9 +17,16 @@ if __name__ == '__main__':
     # Инициализация парсера аргументов с описанием.
     parser = argparse.ArgumentParser(description='Вежливый скрипт')
     # Добавление позиционного аргумента для имени.
-    parser.add_argument('name', help='Имя')
+    parser.add_argument(
+        'name',
+        help='Имя'
+    )
     # Добавление именованного аргумента для фамилии.
-    parser.add_argument('-s', '--surname', help='Фамилия')
+    parser.add_argument(
+        '-s',
+        '--surname',
+        help='Фамилия'
+    )
     # Извлечение аргументов командной строки в переменную args.
     # Новый аргумент.
     parser.add_argument(
